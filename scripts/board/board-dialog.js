@@ -191,6 +191,7 @@ async function updateTaskInFirebase(task) {
 
 /**
  * Closes the dialog when clicking directly on the backdrop background wrapper.
+ * 
  * @returns {void}
  */
 function initDialogCloseOnClickOutside() {

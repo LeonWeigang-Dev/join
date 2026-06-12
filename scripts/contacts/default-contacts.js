@@ -1,5 +1,6 @@
 /**
  * Default contact objects keyed by Firebase contact ID.
+ * 
  * Includes a placeholder entry used for rendering fallback UI.
  * @constant {Object<string, Object>}
  */
@@ -65,6 +66,7 @@ const defaultContactsJson = {
 
 /**
  * Uploads the default contacts object to Firebase under the "contacts" node.
+ * 
  * @returns {Promise<void>}
  */
 async function putDefaultContactsInFirebase() {

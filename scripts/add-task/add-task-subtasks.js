@@ -3,6 +3,7 @@ let skipFocusoutRender = false;
 
 /**
  * Clears the subtask input field and refocuses it.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -14,6 +15,7 @@ function clearSubtaskInput(id) {
 
 /**
  * Adds a new subtask from the input field to the subtasks array and re-renders.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -32,6 +34,7 @@ function addSubtask(id) {
 
 /**
  * Renders all subtasks in the subtask list with edit and delete handlers.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -50,6 +53,7 @@ function renderSubtasks(id) {
 
 /**
  * Re-renders a single subtask after editing.
+ * 
  * @param {number} indexSubtask - The index of the subtask to render
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
@@ -65,6 +69,7 @@ function renderSingleSubtask(indexSubtask, id) {
 
 /**
  * Opens a subtask for editing by replacing it with an input field.
+ * 
  * @param {number} indexSubtask - The index of the subtask to edit
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
@@ -81,6 +86,7 @@ function openSubtaskEdit(indexSubtask, id) {
 
 /**
  * Submits the edited subtask, updating or deleting it as needed.
+ * 
  * @param {number} indexSubtask - The index of the subtask being edited
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
@@ -99,6 +105,7 @@ function submitEditedSubtask(indexSubtask, id) {
 
 /**
  * Deletes a subtask from the array and re-renders the list.
+ * 
  * @param {number} indexSubtask - The index of the subtask to delete
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
@@ -110,6 +117,7 @@ function deleteSubtask(indexSubtask, id) {
 
 /**
  * Focuses the subtask edit input and places the cursor at the end.
+ * 
  * @param {number} indexSubtask - The index of the subtask
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
@@ -122,6 +130,7 @@ function focusSubtaskEditInput(indexSubtask, id) {
 
 /**
  * Adds a focusout event listener to a subtask edit element.
+ * 
  * @param {number} indexSubtask - The index of the subtask
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}

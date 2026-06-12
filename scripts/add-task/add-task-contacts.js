@@ -4,6 +4,7 @@ let assignedContacts = [];
 
 /**
  * Selects or deselects a contact and updates the assigned contacts display.
+ * 
  * @param {number} indexContact - The index of the contact in the filtered contacts list
  * @param {string} contactId - The unique ID of the contact
  * @param {boolean} clickViaCheckbox - Whether the selection was triggered by clicking the checkbox
@@ -17,6 +18,7 @@ function selectContact(indexContact, contactId, clickViaCheckbox, id) {
 
 /**
  * Checks if a contact is already assigned by ID.
+ * 
  * @param {string} contactId - The unique ID of the contact
  * @returns {number|undefined} The index of the contact in assignedContacts or undefined if not found
  */
@@ -30,6 +32,7 @@ function checkIfContactAlreadyAssigned(contactId) {
 
 /**
  * Manages contact selection or deselection, updating checkbox state and assigned contacts.
+ * 
  * @param {number} indexContact - The index of the contact
  * @param {string} contactId - The unique ID of the contact
  * @param {boolean} clickViaCheckbox - Whether the action was triggered by the checkbox
@@ -48,6 +51,7 @@ function handleContactSelection(indexContact, contactId, clickViaCheckbox, id) {
 
 /**
  * Handles the selection or deselection logic when the list item row is clicked.
+ * 
  * @param {HTMLInputElement} checkbox - The checkbox element to toggle
  * @param {number|undefined} indexAssignedContact - The index in assignedContacts, if found
  * @param {number} indexContact - The index of the contact in the filtered list
@@ -65,6 +69,7 @@ function handleSelectionViaLi(checkbox, indexAssignedContact, indexContact) {
 
 /**
  * Handles the selection or deselection logic when clicking directly on the checkbox.
+ * 
  * @param {HTMLInputElement} checkbox - The checkbox element that was clicked
  * @param {number|undefined} indexAssignedContact - The index in assignedContacts, if found
  * @param {number} indexContact - The index of the contact in the filtered list
@@ -85,6 +90,7 @@ function handleSelectionViaCheckbox(
 
 /**
  * Fetches and renders all available contact options in the dropdown.
+ * 
  * @async
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {Promise<void>}
@@ -99,6 +105,7 @@ async function renderContactOptions(id) {
 
 /**
  * Sorts the filtered contacts alphabetically by name, ensuring the current user is first.
+ * 
  * @returns {void}
  */
 function sortContactOptions() {
@@ -108,6 +115,7 @@ function sortContactOptions() {
 
 /**
  * Renders the contact options list with avatars and names.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -123,6 +131,7 @@ function renderContactOptionsList(id) {
 
 /**
  * Appends the HTML template for a single contact option to the list.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @param {number} indexContact - The index of the contact in the filtered list
  * @returns {void}
@@ -143,6 +152,7 @@ function renderContactOptionsListHTML(id, indexContact) {
 
 /**
  * Retrieves the display name for a contact, appending "(You)" if it's the current user.
+ * 
  * @param {number} indexContact - The index of the contact
  * @returns {string} The contact name with optional "(You)" suffix
  */
@@ -157,6 +167,7 @@ function getContactName(indexContact) {
 
 /**
  * Retrieves the current user object from localStorage.
+ * 
  * @returns {Object|null} The user object or null if not found
  */
 function getCurrentUser() {
@@ -171,6 +182,7 @@ function getCurrentUser() {
 
 /**
  * Ensures the current user is the first contact in the filtered contacts array.
+ * 
  * @returns {void}
  */
 function ensureUserIsFirstInContactsArr() {
@@ -189,6 +201,7 @@ function ensureUserIsFirstInContactsArr() {
 
 /**
  * Moves the current user to the front of the filtered contacts array.
+ * 
  * @param {Object} currentUser - The current user object
  * @returns {void}
  */
@@ -201,6 +214,7 @@ function changeUserPositionInArray(currentUser) {
 
 /**
  * Checks if a contact is assigned by comparing contact names.
+ * 
  * @param {Contact} contact - The contact object to check
  * @returns {boolean} True if the contact is assigned, false otherwise
  */
@@ -212,6 +226,7 @@ function checkIfContactAssigned(contact) {
 
 /**
  * Fetches all contacts from Firebase and populates the contactsOptions array.
+ * 
  * @async
  * @returns {Promise<void>}
  */
@@ -225,6 +240,7 @@ async function getContacts() {
 
 /**
  * Fetches all users from Firebase and populates the contactsOptions array.
+ * 
  * @async
  * @returns {Promise<void>}
  */
@@ -238,6 +254,7 @@ async function getUsers() {
 
 /**
  * Populates the contactsOptions array with contacts from the Firebase response object.
+ * 
  * @param {Object} object - The response object from Firebase containing data keys
  * @returns {void}
  */
@@ -257,6 +274,7 @@ function fillContactsOptionsArray(object) {
 
 /**
  * Adds the current user to the beginning of the contacts options array if logged in.
+ * 
  * @returns {void}
  */
 function addUserToContactsOptionsArray() {

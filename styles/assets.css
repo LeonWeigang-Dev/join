@@ -131,14 +131,13 @@ input::placeholder {
   background-color: #edf2fa;
   transform: scale(1.05);
 }
+
 .checkbox-container input[type="checkbox"]:focus-visible {
   outline: 2px solid black;
 }
 
 .checkbox-container:has(input[type="checkbox"]:checked) {
-  background: white
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M20 11V17C20 18.6569 18.6569 20 17 20H7C5.34315 20 4 18.6569 4 17V7C4 5.34315 5.34315 4 7 4H15' stroke='%232A3647' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M8 12L12 16L20 4.5' stroke='%232A3647' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
-    no-repeat center;
+  background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M20 11V17C20 18.6569 18.6569 20 17 20H7C5.34315 20 4 18.6569 4 17V7C4 5.34315 5.34315 4 7 4H15' stroke='%232A3647' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M8 12L12 16L20 4.5' stroke='%232A3647' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center;
 }
 
 .checkbox-container:hover:has(input[type="checkbox"]:checked) {
@@ -212,6 +211,7 @@ input[type="search"]::-webkit-search-cancel-button {
   height: 24px;
   background-color: transparent;
 }
+
 .custom-select--trigger--img-container:focus-visible {
   background-color: var(--light-gray2);
 }
@@ -244,6 +244,7 @@ input[type="search"]::-webkit-search-cancel-button {
   border-radius: var(--border-radius-s);
   background-color: white;
 }
+
 .custom-select--option:focus-visible {
   background-color: #eeeeee;
   outline: none;

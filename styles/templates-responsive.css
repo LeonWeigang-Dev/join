@@ -2,6 +2,7 @@
   #landscape-warning {
     display: flex !important;
   }
+
   body {
     overflow: hidden !important;
   }
@@ -38,10 +39,12 @@
   :root {
     --padding-lr-main: 32px;
   }
+
   .main-content {
     min-height: calc(100dvh - var(--header-height) - var(--resp-navbar-height));
     padding: var(--padding-lr-main);
   }
+
   .sidebar {
     top: auto;
     left: 0;
@@ -54,11 +57,13 @@
     justify-content: center;
     z-index: 1000;
   }
+
   .nav-login-item {
     margin-bottom: 0;
     margin-right: auto;
     padding-left: 20px;
   }
+
   .sidebar-logo,
   .sidebar-footer {
     display: none;
@@ -69,6 +74,7 @@
     flex-grow: 0;
     z-index: 999 !important;
   }
+
   .nav-bottom-start {
     margin-top: 0;
   }
@@ -121,6 +127,7 @@
     margin-bottom: var(--resp-navbar-height);
     padding-bottom: 40px;
   }
+
   .header-title {
     display: none;
   }
@@ -128,9 +135,10 @@
   .header-help-link {
     display: none;
   }
+
   .dropdown-content .dropdown-help-link {
-  display: block;
-}
+    display: block;
+  }
 }
 
 @media screen and (max-width: 768px) {

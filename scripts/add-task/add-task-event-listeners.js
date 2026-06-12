@@ -3,6 +3,7 @@ let successfullSubmit;
 
 /**
  * Registers a keyboard handler for a specific element selector.
+ * 
  * @param {string} selector - The CSS selector to match
  * @param {() => void} handler - The callback function to execute on Enter key
  * @returns {void}
@@ -13,6 +14,7 @@ function registerEnterHandler(selector, handler) {
 
 /**
  * Registers all Enter key handlers for form elements and dropdowns.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -31,6 +33,7 @@ function registerEnterHandlers(id) {
 
 /**
  * Registers Enter key handlers for all contact options in the dropdown.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -53,6 +56,7 @@ function contactOptionsEnterHandlers(id) {
 
 /**
  * Registers Enter key handlers for all contact option checkboxes in the dropdown.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -67,6 +71,7 @@ function contactOptionsCheckboxesEnterHandlers(id) {
 
 /**
  * Registers an Enter key handler for a specific contact checkbox element.
+ * 
  * @param {HTMLInputElement} checkbox - The checkbox element containing data attributes
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
@@ -84,6 +89,7 @@ function registerCheckboxesEnterHandlers(checkbox, id) {
 
 /**
  * Registers Enter key handlers for all category options in the dropdown.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -101,6 +107,7 @@ function categoryOptionsEnterHandlers(id) {
 
 /**
  * Attaches event listeners to form and dropdown elements.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -114,6 +121,7 @@ function addEventListeners(id) {
 
 /**
  * Attaches focusout listeners to the contacts dropdown.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -126,6 +134,7 @@ function addContactsDropdownEventListener(id) {
 
 /**
  * Attaches focusout listeners to the categories dropdown.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -140,6 +149,7 @@ function addCategoriesDropdownEventListener(id) {
 
 /**
  * Adds submit and keydown listeners to the task form.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -153,6 +163,7 @@ function addTaskFormEventListeners(id) {
 
 /**
  * Handles keydown events in the task form, triggering registered handlers on Enter key.
+ * 
  * @param {KeyboardEvent} event - The keyboard event
  * @returns {void}
  */
@@ -172,6 +183,7 @@ function taskFormKeydownFunction(event) {
 
 /**
  * Determines if the keydown event should trigger a handler based on the element type.
+ * 
  * @param {HTMLElement} el - The element that triggered the event
  * @returns {boolean} True if the handler should proceed, false otherwise
  */
@@ -193,6 +205,7 @@ function handleKeyDownElement(el) {
 
 /**
  * Validates the task form submission and delegates invalid cases to the error handler.
+ * 
  * @param {Event} event - The submit event object.
  * @param {string} id - The identifier suffix for the current form or dialog instance.
  * @returns {void}
@@ -257,6 +270,7 @@ function taskFormSubmitFunctionEditTask(taskForm, id) {
 /**
  * Handles an invalid task submission by preventing the default submit action,
  * marking the form as unsuccessful, and applying validation styling.
+ * 
  * @param {Event} event - The submit event object
  * @param {boolean} formIsValid - Indicates whether the form fields pass native validation.
  * @param {HTMLFormElement} taskForm - The form element being submitted.
@@ -283,6 +297,7 @@ function handleInvalidSubmit(
 
 /**
  * Processes validation specifically for the task category dropdown when submitting.
+ * 
  * @param {boolean} formIsValid - Indicates whether the form fields pass native validation
  * @param {boolean} categoryIsValid - Indicates whether a valid category has been selected
  * @param {string} id - The identifier suffix for the current form or dialog instance
@@ -303,6 +318,7 @@ function handleInvalidCategory(formIsValid, categoryIsValid, id, taskForm) {
 
 /**
  * Marks invalid form fields with error styling and focuses the first invalid element.
+ * 
  * @param {HTMLFormElement} taskForm - The form being validated
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
@@ -341,6 +357,7 @@ function addClassesToEachelement(invalidElements, id, validDate) {
 
 /**
  * Adds error styling classes to the category dropdown.
+ * 
  * @param {HTMLFormElement} taskForm - The form containing the category dropdown
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
@@ -358,6 +375,7 @@ function addCategoryClasses(taskForm, id) {
 
 /**
  * Focuses an element and scrolls it into view with smooth behavior.
+ * 
  * @param {HTMLElement} element - The element to focus
  * @param {HTMLFormElement} taskForm - The form containing the field
  * @returns {void}
@@ -374,6 +392,7 @@ function focusInvalidElement(element, taskForm) {
 
 /**
  * Handles focusout event on the contacts dropdown, clearing the search and closing the dropdown.
+ * 
  * @param {FocusEvent} e - The focusout event object
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
@@ -392,6 +411,7 @@ function contactsDropdownFocusOutFunction(e, id) {
 
 /**
  * Handles focusout event on the categories dropdown, closing it when focus leaves.
+ * 
  * @param {FocusEvent} e - The focusout event object
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}

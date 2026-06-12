@@ -22,6 +22,7 @@ function startDragging(event, id) {
 
 /**
  * Initializes the mobile touch handling for drag operations.
+ * 
  * @param {Event} event - The touch start event.
  * @param {HTMLElement} card - The card element being dragged.
  * @returns {void}
@@ -41,6 +42,7 @@ function initMobileTouch(event, card) {
 
 /**
  * Activates the mobile drag style and disables global text selection.
+ * 
  * @param {HTMLElement} card - The card element for which to activate drag style.
  * @returns {void}
  */
@@ -81,6 +83,7 @@ function handleDesktopScroll(clientY) {
 
 /**
  * Prevents the red "blocked" cursor globally while dragging.
+ * 
  * @returns {void}
  */
 function initGlobalDragSettings() {
@@ -178,6 +181,7 @@ function checkAutoScroll(clientY) {
 
 /**
  * Handles the end of a touch event, triggers drop logic, and restores text selection.
+ * 
  * @param {Event} event - The touch end event.
  * @returns {void}
  */
@@ -198,6 +202,7 @@ function stopDragging(event) {
 
 /**
  * Evaluates the final drop placement container when a mobile touch interaction terminates.
+ * 
  * @param {Event} event - The touch end event.
  * @returns {void}
  */

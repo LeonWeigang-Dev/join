@@ -3,6 +3,7 @@ let addTaskColumn;
 /**
  * Starts the task creation flow by disabling submit buttons, validating the form,
  * and re-enabling the relevant button after the request completes.
+ * 
  * @async
  * @param {Event} event - The submit event triggered by the form.
  * @param {string} page - The originating page context ("add task" or "board").
@@ -22,6 +23,7 @@ async function addTask(event, page, id) {
 
 /**
  * Validates the submitted task data, posts it to Firebase, and completes the task flow.
+ * 
  * @async
  * @param {string} id - The identifier suffix for the current form or dialog instance.
  * @param {string} page - The originating page context ("add task" or "board").
@@ -45,6 +47,7 @@ async function handleValidTaskSubmit(id, page, event) {
 
 /**
  * Enables the respective cancel or clear buttons based on the form context ID.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -58,6 +61,7 @@ function enableAddTaskButtons(id) {
 
 /**
  * Completes task creation by redirecting or refreshing the board after a short delay.
+ * 
  * @param {string} page - The originating page context ("add task" or "board").
  * @returns {void}
  */
@@ -74,6 +78,7 @@ function completeTaskCreation(page) {
 
 /**
  * Redirects to the board page after a short delay.
+ * 
  * @returns {void}
  */
 function redirectToBoard() {
@@ -84,6 +89,7 @@ function redirectToBoard() {
 
 /**
  * Creates a task object from the current form inputs.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {Object} The task object ready for Firebase submission.
  */
@@ -106,6 +112,7 @@ function taskJson(id) {
 
 /**
  * Builds the subtasks array for the task object.
+ * 
  * @returns {Array<Object>} The subtasks JSON array
  */
 function getSubtasksJson() {
@@ -121,6 +128,7 @@ function getSubtasksJson() {
 
 /**
  * Displays a toast notification message for task creation and hides it after 3 seconds.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -141,6 +149,7 @@ function showAddtaskToastMsg(id) {
 
 /**
  * Sends the task object to Firebase as a POST request.
+ * 
  * @async
  * @param {Object} task - The task object to post
  * @returns {Promise<Object>} The Firebase response JSON
@@ -158,6 +167,7 @@ async function postTaskToFirebase(task) {
 
 /**
  * Clears all form inputs and resets task-related arrays to their initial state.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -172,6 +182,7 @@ function clearTask(id) {
 
 /**
  * Clears all form field values and resets priority to default.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -191,6 +202,7 @@ function clearFormValues(id) {
 
 /**
  * Removes error-related css classes from all currently marked invalid form elements.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */
@@ -209,6 +221,7 @@ function removeFormValidation(id) {
 
 /**
  * Checks if a specific input type becomes valid and dynamically removes error styling.
+ * 
  * @param {string} inputType - The type of input to check (e.g., "title" or "due-date")
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
@@ -227,6 +240,7 @@ function checkIfInputValid(inputType, id) {
 
 /**
  * Checks if a specific input type is invalid and dynamically adds error styling.
+ * 
  * @param {string} inputType - The type of input to check (e.g., "title" or "due-date")
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
@@ -245,6 +259,7 @@ function checkIfInputInvalid(inputType, id) {
 
 /**
  * Validates whether a category was selected and updates the styling of the custom dropdown.
+ * 
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {void}
  */

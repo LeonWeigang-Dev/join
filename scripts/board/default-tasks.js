@@ -27,6 +27,7 @@
 
 /**
  * Default task templates used to populate Firebase with initial board tasks.
+ * 
  * @constant {Array<TaskTemplate>}
  */
 const defaultTasksArray = [

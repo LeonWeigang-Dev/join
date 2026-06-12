@@ -95,6 +95,7 @@ main {
 .input-wrapper-login-email {
   margin-bottom: 32px;
 }
+
 .input-wrapper-login-password {
   margin-bottom: 0px;
 }
@@ -281,6 +282,7 @@ footer {
 .success-toast.show {
   transform: translate(-50%, -50%);
 }
+
 /* #endregion */
 
 /* #region password toggle + invalid border */

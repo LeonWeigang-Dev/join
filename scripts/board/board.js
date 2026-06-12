@@ -1,11 +1,13 @@
 /**
  * Global cache storing all active task objects fetched from the database.
+ * 
  * @type {Array<Object>}
  */
 let todos = [];
 
 /**
  * Stores the unique database ID string of the task currently being dragged.
+ * 
  * @type {string|undefined}
  */
 let currentDraggedElement;
@@ -13,7 +15,7 @@ let currentDraggedElement;
 /**
  * Initializes the board by ensuring all default tasks are present, 
  * loading tasks from Firebase, and enabling pointer events for the board.
- * * @async
+ * @async
  * @returns {Promise<void>}
  */
 async function initBoard() {
@@ -24,7 +26,8 @@ async function initBoard() {
 
 /**
  * Loads tasks from Firebase and updates the global `todos` array.
- * * @async
+ *
+ * @async
  * @returns {Promise<void>}
  */
 async function loadTasks() {

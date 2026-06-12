@@ -1,5 +1,6 @@
 /**
  * Generates HTML for a subtask list item with edit and delete buttons.
+ * 
  * @param {Object} subtask - The subtask object containing title and status
  * @param {number} indexSubtask - The index of the subtask
  * @param {string} id - The identifier suffix for the current form or dialog instance
@@ -59,6 +60,7 @@ function subtaskLiTemplate(subtask, indexSubtask, id) {
 
 /**
  * Generates HTML for a subtask list item with an input field for editing.
+ * 
  * @param {number} indexSubtask - The index of the subtask
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {string} HTML string for the editable subtask list item
@@ -113,6 +115,7 @@ function subtaskLiWithInputTemplate(indexSubtask, id) {
 
 /**
  * Generates HTML for a contact option in the contact dropdown with checkbox.
+ * 
  * @param {number} indexContact - The index of the contact
  * @param {string} initials - The contact's initials
  * @param {string} contactName - The contact's full name
@@ -159,6 +162,7 @@ function contactOptionTemplate(
 
 /**
  * Generates HTML for an assigned contact avatar badge.
+ * 
  * @param {number} indexAssignedContact - The index of the assigned contact
  * @param {string} initials - The contact's initials
  * @returns {string} HTML string for the contact avatar badge
@@ -171,6 +175,7 @@ function contactAvatarTemplate(indexAssignedContact, initials) {
 
 /**
  * Generates the overflow badge that shows how many additional assigned contacts are hidden.
+ * 
  * @param {number} count - The number of extra assigned contacts beyond the visible five
  * @returns {string} HTML string for the overflow badge
  */
@@ -180,6 +185,7 @@ function generateOverflowBadgeTemplate(count) {
 
 /**
  * Generates HTML for a category option in the category dropdown.
+ * 
  * @param {number} indexCategory - The index of the category
  * @param {string} id - The identifier suffix for the current form or dialog instance
  * @returns {string} HTML string for the category option

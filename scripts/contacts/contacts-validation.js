@@ -1,5 +1,6 @@
 /**
  * Checks input validity while typing. Removes error styles if the field becomes valid.
+ * 
  * @param {string} inputId - 'name', 'email', or 'phone'
  * @return {void}
  */
@@ -12,6 +13,7 @@ function checkContactInputValidityOnInput(inputId) {
 
 /**
  * Checks input validity when focus is lost. Adds error styles if the field is invalid.
+ * 
  * @param {string} inputId - 'name', 'email', or 'phone'
  * @return {void}
  */
@@ -24,6 +26,7 @@ function checkContactInputValidityOnBlur(inputId) {
 
 /**
  * Removes the invalid style from an input field and hides its error message.
+ * 
  * @param {HTMLInputElement} element - The input element to clear errors from.
  * @return {void}
  */
@@ -34,6 +37,7 @@ function removeInvalidStyle(element) {
 
 /**
  * Adds the invalid style to an input field and displays its error message.
+ * 
  * @param {HTMLInputElement} element - The input element to mark as invalid.
  * @return {void}
  */
@@ -44,6 +48,7 @@ function addInvalidStyle(element) {
 
 /**
  * Checks all fields on form submission.
+ * 
  * @returns {boolean} - True if the entire form is valid.
  */
 function isContactFormValid() {

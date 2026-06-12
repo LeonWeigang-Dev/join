@@ -3,6 +3,7 @@ let currentEditingId = null;
 
 /**
  * Initializes the application by loading and rendering contacts.
+ * 
  * @async
  * @returns {Promise<void>}
  */
@@ -16,6 +17,7 @@ async function init() {
 
 /**
  * Loads contacts from the database and sorts them alphabetically.
+ * 
  * @async
  * @returns {Promise<void>}
  */
@@ -31,6 +33,7 @@ async function loadContacts() {
 
 /**
  * Converts the raw database object into an array and assigns IDs.
+ * 
  * @param {Object} contactsObj - Raw contacts object from the database.
  * @returns {void}
  */
@@ -48,6 +51,7 @@ function fillContactsArray(contactsObj) {
 
 /**
  * Loads all registered users from the database and adds them to the contacts list.
+ * 
  * @async
  * @returns {Promise<void>}
  */
@@ -62,6 +66,7 @@ async function loadAllUsers() {
 
 /**
  * Renders the grouped contact list into the DOM.
+ * 
  * @returns {void}
  */
 function renderContactList() {
@@ -82,6 +87,7 @@ function renderContactList() {
 
 /**
  * Opens, renders, and animates the detailed view of a contact.
+ * 
  * @param {string} id - Unique contact ID.
  * @returns {void}
  */
@@ -97,6 +103,7 @@ function showContactDetails(id) {
 
 /**
  * Finds a contact object in the local array by its ID.
+ * 
  * @param {string} id - Unique contact ID.
  * @returns {Object|null} The contact object, or null if not found.
  */
@@ -109,6 +116,7 @@ function findContactById(id) {
 
 /**
  * Validates, creates, saves, and displays a new contact.
+ * 
  * @async
  * @returns {Promise<void>}
  */
@@ -126,6 +134,7 @@ async function createNewContact() {
 
 /**
  * Saves a new contact to the database.
+ * 
  * @async
  * @param {Object} contact - The contact data object.
  * @returns {Promise<string>} The generated database ID.
@@ -143,6 +152,7 @@ async function postContact(contact) {
 
 /**
  * Checks if an email already exists in the local contacts array.
+ * 
  * @param {string} email - The email to check.
  * @param {string|null} excludeId - An optional ID to ignore (for editing).
  * @returns {boolean} True if the email is already taken.
@@ -158,6 +168,7 @@ function isEmailAlreadyUsed(email, excludeId = null) {
 
 /**
  * Marks the email field as invalid with a specific duplicate message.
+ * 
  * @param {HTMLInputElement} emailInput - The email input element.
  * @returns {void}
  */
@@ -172,6 +183,7 @@ function handleDuplicateEmailError(emailInput) {
 
 /**
  * Extracts form values and saves a brand new contact to the database.
+ * 
  * @async
  * @param {string} email - The validated email string.
  */
@@ -193,6 +205,7 @@ async function executeContactCreation(email) {
 
 /**
  * Closes the dialog and reloads the contact application state.
+ * 
  * @async
  * @returns {Promise<void>}
  */
@@ -203,6 +216,7 @@ async function finalizeAddition() {
 
 /**
  * Resets the form inputs and clears all validation errors.
+ * 
  * @return {void}
  */
 function resetForm() {
@@ -220,6 +234,7 @@ function resetForm() {
 
 /**
  * Opens the dialog populated with contact data for editing.
+ * 
  * @param {string} id - Unique contact ID.
  * @return {void}
  */
@@ -237,6 +252,7 @@ function openEditContact(id) {
 
 /**
  * Sets up the text elements and submit handler for the add contact view.
+ * 
  * @return {void}
  */
 function setupAddContactUI() {
@@ -253,6 +269,7 @@ function setupAddContactUI() {
 
 /**
  * Prepares and opens the dialog for creating a new contact.
+ * 
  * @return {void}
  */
 function prepareAddContactDialog() {
@@ -266,6 +283,7 @@ function prepareAddContactDialog() {
 
 /**
  * Validates and saves changes made to an edited contact.
+ * 
  * @async
  * @returns {Promise<void>}
  */
@@ -283,6 +301,7 @@ async function saveEditedContact() {
 
 /**
  * Extracts form values and pushes the updated contact data to the database.
+ * 
  * @async
  * @param {string} email - The validated email string.
  */
@@ -299,6 +318,7 @@ async function executeContactUpdate(email) {
 
 /**
  * Updates an existing contact or user in the database without losing properties.
+ * 
  * @async
  * @param {Object} contact - The updated fields.
  */
@@ -317,6 +337,7 @@ async function putContact(contact) {
 
 /**
  * Deletes a contact or user from the database depending on its origin.
+ * 
  * @async
  * @param {string} id - Unique contact or user ID.
  */
@@ -326,7 +347,7 @@ async function deleteContact(id, event) {
   disableButtonWhileLoading("btn-cancel");
   let isUser = await checkIfIdIsUser(id);
   let path = isUser ? `users/${id}` : `contacts/${id}`;
-  let url = `https://join-50921-default-rtdb.europe-west1.firebasedatabase.app/${path}.json`;
+  let url = `https://join-6489e-default-rtdb.europe-west1.firebasedatabase.app/${path}.json`;
   await fetch(url, { method: "DELETE" });
   closeContactDetails();
   document.getElementById("contact-detail-content").innerHTML = "";
@@ -337,13 +358,14 @@ async function deleteContact(id, event) {
 
 /**
  * Checks if a specific ID belongs to a registered user.
+ * 
  * @async
  * @param {string} id - The ID to check.
  * @returns {Promise<boolean>} True if the ID is a user.
  */
 async function checkIfIdIsUser(id) {
   let response = await fetch(
-    `https://join-50921-default-rtdb.europe-west1.firebasedatabase.app/users/${id}.json`,
+    `https://join-6489e-default-rtdb.europe-west1.firebasedatabase.app/users/${id}.json`,
   );
   let data = await response.json();
   return data !== null;

@@ -1,5 +1,6 @@
 /**
  * Generates HTML for a letter section header used to group contacts alphabetically.
+ * 
  * @param {string} letter - The alphabet letter for the header
  * @returns {string} HTML string for the letter header section
  */
@@ -13,6 +14,7 @@ function renderLetterHeader(letter) {
 
 /**
  * Generates HTML for a single contact card button in the contact list.
+ * 
  * @param {Object} contact - The contact object containing details like id, color, name, and email
  * @param {string} contact.id - The unique identifier of the contact
  * @param {string} contact.color - The background color code for the avatar
@@ -34,6 +36,7 @@ function generateContactHTML(contact, initials) {
 
 /**
  * Generates HTML for the detailed profile view of a selected contact, including action menus.
+ * 
  * @param {Object} contact - The contact object containing details like id, color, name, email, and phone
  * @param {string} contact.id - The unique identifier of the contact
  * @param {string} contact.color - The background color code for the avatar

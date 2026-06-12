@@ -30,7 +30,7 @@ input {
   padding: 12px 16px;
 }
 
-.add-task-container > section {
+.add-task-container>section {
   margin-bottom: 32px;
 }
 
@@ -103,9 +103,11 @@ input {
 .urgent-active {
   background-color: #ff3d00;
 }
+
 .medium-active {
   background-color: var(--light-orange);
 }
+
 .low-active {
   background-color: #7ae229;
 }
@@ -144,10 +146,7 @@ input {
 .add-task-bottom-btns-container--add-task {
   position: fixed;
   top: 90dvh;
-  left: calc(
-    var(--sidebar-width) + var(--padding-lr-main-add-task) +
-      (var(--width-content-wrapper))
-  );
+  left: calc(var(--sidebar-width) + var(--padding-lr-main-add-task) + (var(--width-content-wrapper)));
   transform: translateX(-100%);
 }
 
@@ -183,7 +182,7 @@ input {
   flex-direction: column;
 }
 
-.add-task-container > section {
+.add-task-container>section {
   display: flex;
   flex-direction: column;
 }

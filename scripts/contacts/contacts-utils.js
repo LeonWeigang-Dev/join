@@ -1,5 +1,6 @@
 /**
  * Generates uppercase initials from a name.
+ * 
  * @param {string} name - Full name of the contact.
  * @returns {string} Initials (e.g., "JD").
  */
@@ -17,6 +18,7 @@ function getInitials(name) {
 
 /**
  * Returns a random color string from the predefined palette.
+ * 
  * @returns {string} Hex color code.
  */
 function getRandomColor() {
@@ -32,6 +34,7 @@ function getRandomColor() {
 
 /**
  * Displays the success confirmation banner temporarily.
+ * 
  * @returns {void}
  */
 function showSuccessBanner() {
@@ -45,6 +48,7 @@ function showSuccessBanner() {
 
 /**
  * Focuses the mobile back button for better accessibility.
+ * 
  * @returns {void}
  */
 function focusBackButton() {
@@ -56,6 +60,7 @@ function focusBackButton() {
 
 /**
  * Focuses the appropriate close button depending on screen size.
+ * 
  * @returns {void}
  */
 function focusActiveCloseButton() {
@@ -67,6 +72,7 @@ function focusActiveCloseButton() {
 
 /**
  * Focuses the first button inside the mobile menu pop-up.
+ * 
  * @returns {void}
  */
 function focusFirstMenuAction() {
@@ -78,6 +84,7 @@ function focusFirstMenuAction() {
 
 /**
  * Delays the focus handling for the mobile menu to ensure smooth execution.
+ * 
  * @returns {void}
  */
 function delayMenuFocus() {

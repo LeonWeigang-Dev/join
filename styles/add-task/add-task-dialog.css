@@ -127,6 +127,7 @@
   :root {
     --dialog-content-padding: 32px;
   }
+
   .add-task-headline--dialog {
     position: sticky;
     top: 0px;
@@ -156,9 +157,11 @@
   :root {
     --dialog-content-padding: 16px;
   }
+
   .add-task-dialog {
     width: 100dvw;
   }
+
   .content-wrapper--dialog {
     padding: 0 var(--dialog-content-padding);
   }

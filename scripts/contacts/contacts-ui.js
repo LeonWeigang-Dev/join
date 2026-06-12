@@ -1,5 +1,6 @@
 /**
  * Toggles the visibility of the mobile action menu.
+ * 
  * @returns {void}
  */
 function toggleMobileMenu() {
@@ -14,6 +15,7 @@ function toggleMobileMenu() {
 
 /**
  * Resets the detail view class to prepare for the slide-in animation.
+ * 
  * @returns {void}
  */
 function prepareDetailsAnimation() {
@@ -23,6 +25,7 @@ function prepareDetailsAnimation() {
 
 /**
  * Renders the detailed HTML view of a contact.
+ * 
  * @param {Object} contact - The contact object.
  * @returns {void}
  */
@@ -34,6 +37,7 @@ function renderDetails(contact) {
 
 /**
  * Triggers the slide-in animation for the detail view.
+ * 
  * @returns {void}
  */
 function startDetailsAnimation() {
@@ -46,6 +50,7 @@ function startDetailsAnimation() {
 
 /**
  * Highlights the selected contact card in the list.
+ * 
  * @param {string} id - Unique contact ID.
  * @returns {void}
  */
@@ -62,6 +67,7 @@ function highlightContact(id) {
 
 /**
  * Closes the contact detail view.
+ * 
  * @returns {void}
  */
 function closeContactDetails() {
@@ -71,6 +77,7 @@ function closeContactDetails() {
 
 /**
  * Sets the dialog avatar color and initials based on the contact.
+ * 
  * @param {Object} contact - The contact object.
  * @returns {void}
  */
@@ -83,6 +90,7 @@ function updateDialogAvatar(contact) {
 
 /**
  * Resets the dialog avatar to the default placeholder.
+ * 
  * @return {void}
  */
 function resetDialogAvatar() {
@@ -93,6 +101,7 @@ function resetDialogAvatar() {
 
 /**
  * Fills the form input fields with contact data.
+ * 
  * @param {Object} contact - The contact object.
  * @return {void}
  */
@@ -104,6 +113,7 @@ function fillFormFields(contact) {
 
 /**
  * Changes the dialog texts and submit behavior for editing a contact.
+ * 
  * @param {string} id - Unique contact ID.
  * @return {void}
  */
@@ -122,6 +132,7 @@ function adaptDialogForEdit(id) {
 
 /**
  * Changes the form cancel button into a delete button.
+ * 
  * @param {string} id - Unique contact ID.
  * @returns {void}
  */
@@ -138,6 +149,7 @@ function adaptCancelButtonToDelete(id) {
 
 /**
  * Opens the contact dialog modal.
+ * 
  * @returns {void}
  */
 function openContactDialog() {
@@ -150,6 +162,7 @@ function openContactDialog() {
 
 /**
  * Closes the contact dialog modal with a slide-out animation.
+ * 
  * @returns {void}
  */
 function closeContactDialog() {
@@ -167,6 +180,7 @@ function closeContactDialog() {
 
 /**
  * Closes the dialog if a click occurs outside of it (on the backdrop).
+ * 
  * @param {MouseEvent} event - The click event.
  * @return {void}
  */
@@ -179,6 +193,7 @@ function closeContactDialogOutside(event) {
 
 /**
  * Resets the dialog cancel button to its default behavior.
+ * 
  * @returns {void}
  */
 function resetCancelButton() {

@@ -43,6 +43,7 @@
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(100dvw);
   }
@@ -236,8 +237,7 @@
 }
 
 .btn-cancel:not(:disabled):hover img {
-  filter: invert(47%) sepia(95%) saturate(1852%) hue-rotate(170deg)
-    brightness(100%) contrast(100%);
+  filter: invert(47%) sepia(95%) saturate(1852%) hue-rotate(170deg) brightness(100%) contrast(100%);
 }
 
 .btn-create {

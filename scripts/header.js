@@ -1,5 +1,6 @@
 /**
  * Initializes the header. Sets avatar and outside-click listener.
+ * 
  * @returns {void}
  */
 function initHeader() {
@@ -12,6 +13,7 @@ function initHeader() {
 
 /**
  * Reads current user from localStorage.
+ * 
  * @returns {Object|null} User object or null
  */
 function getCurrentUser() {
@@ -26,6 +28,7 @@ function getCurrentUser() {
 
 /**
  * Returns up to 2 uppercase initials from a name.
+ * 
  * @param {string} name - Full name
  * @returns {string} Initials
  */
@@ -38,6 +41,7 @@ function getInitials(name) {
 
 /**
  * Sets avatar text and color, or "G" for guest.
+ * 
  * @param {Object|null} user - User object
  * @returns {void}
  */
@@ -58,6 +62,7 @@ function updateHeaderAvatar(user) {
 
 /**
  * Toggles the header dropdown menu.
+ * 
  * @returns {void}
  */
 function toggleDropdown() {
@@ -67,6 +72,7 @@ function toggleDropdown() {
 
 /**
  * Closes the dropdown on outside click.
+ * 
  * @param {Event} event - Click event
  * @returns {void}
  */
@@ -81,6 +87,7 @@ function closeDropdownOnOutsideClick(event) {
 
 /**
  * Logs out: clears localStorage and redirects to login.
+ * 
  * @returns {void}
  */
 function logout() {

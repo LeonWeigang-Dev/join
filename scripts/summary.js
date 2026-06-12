@@ -1,5 +1,6 @@
 /**
  * Initializes the summary page. Sets greeting, loads tasks, runs mobile animation.
+ * 
  * @returns {Promise<void>}
  */
 async function initSummary() {
@@ -13,6 +14,7 @@ async function initSummary() {
 
 /**
  * Returns greeting based on time of day.
+ * 
  * @returns {string} Greeting text
  */
 function getGreeting() {
@@ -24,6 +26,7 @@ function getGreeting() {
 
 /**
  * Updates greeting text and user name.
+ * 
  * @param {Object|null} user - User object
  * @returns {void}
  */
@@ -42,6 +45,7 @@ function updateGreeting(user) {
 
 /**
  * Runs mobile greeting animation (only on screens ≤1024px).
+ * 
  * @returns {void}
  */
 function runMobileGreetingAnimation() {
@@ -55,6 +59,7 @@ function runMobileGreetingAnimation() {
 
 /**
  * Loads all tasks from Firebase.
+ * 
  * @returns {Promise<void>}
  */
 async function loadSummaryData() {
@@ -65,6 +70,7 @@ async function loadSummaryData() {
 
 /**
  * Renders all counters and deadline info.
+ * 
  * @param {Object} tasks - Tasks object from Firebase
  * @returns {void}
  */
@@ -76,6 +82,7 @@ function renderMetrics(tasks) {
 
 /**
  * Sets status counters and total.
+ * 
  * @param {Array} taskList - All tasks
  * @returns {void}
  */
@@ -89,6 +96,7 @@ function renderStatusCounts(taskList) {
 
 /**
  * Counts tasks by column value.
+ * 
  * @param {Array} taskList - All tasks
  * @param {string} column - Column value to match
  * @returns {number} Count
@@ -99,6 +107,7 @@ function countByStatus(taskList, column) {
 
 /**
  * Renders urgent count and earliest deadline.
+ * 
  * @param {Array} taskList - All tasks
  * @returns {void}
  */
@@ -113,6 +122,7 @@ function renderUrgentSection(taskList) {
 
 /**
  * Formats date for deadline display.
+ * 
  * @param {string} dateString - ISO date string
  * @returns {string} Formatted date
  */
@@ -126,11 +136,12 @@ function formatDeadline(dateString) {
 
 /**
  * Tries to lock the screen orientation to portrait mode on mobile devices.
+ * 
  * @returns {void}
  */
 function lockScreenOrientation() {
   if (screen.orientation && screen.orientation.lock) {
-    screen.orientation.lock("portrait-primary").catch(() => {});
+    screen.orientation.lock("portrait-primary").catch(() => { });
   }
 }
 
