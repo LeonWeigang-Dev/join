@@ -21,6 +21,7 @@ let currentDraggedElement;
 async function initBoard() {
   await loadTasks();
   guardPage();
+  /* postDefaultTasksInFirebase(); */
   enableAllPointerEvents("--board");
 }
 

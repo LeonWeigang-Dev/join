@@ -152,7 +152,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line5">line 5</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line6">line 6</a>
     </li></ul></dd>
     
 
@@ -214,7 +214,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line30">line 30</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line35">line 35</a>
     </li></ul></dd>
     
 
@@ -286,7 +286,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line18">line 18</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line21">line 21</a>
     </li></ul></dd>
     
 
@@ -358,7 +358,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line24">line 24</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line28">line 28</a>
     </li></ul></dd>
     
 
@@ -430,7 +430,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line12">line 12</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line14">line 14</a>
     </li></ul></dd>
     
 
@@ -458,7 +458,7 @@
     
 
     
-    <h4 class="name" id="checkLoginEmail"><span class="type-signature"></span>checkLoginEmail<span class="signature">(email)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="addInvalidStyle"><span class="type-signature"></span>addInvalidStyle<span class="signature">(element)</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
     
@@ -466,7 +466,7 @@
 
 
 <div class="description">
-    Checks the login email input for validity.
+    Adds invalid styling to a form field and its wrapper.
 </div>
 
 
@@ -502,13 +502,13 @@
 
         <tr>
             
-                <td class="name"><code>email</code></td>
+                <td class="name"><code>element</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">HTMLElement</span>
 
 
             
@@ -518,7 +518,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">The invalid input element.</td>
         </tr>
 
     
@@ -559,7 +559,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line92">line 92</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line108">line 108</a>
     </li></ul></dd>
     
 
@@ -595,7 +595,7 @@
     </dt>
     <dd>
         
-<span class="param-type">boolean</span>
+<span class="param-type">void</span>
 
 
     </dd>
@@ -613,7 +613,7 @@
     
 
     
-    <h4 class="name" id="checkLoginPassword"><span class="type-signature"></span>checkLoginPassword<span class="signature">(password)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="checkInputValidityOnBlurLogin"><span class="type-signature"></span>checkInputValidityOnBlurLogin<span class="signature">(inputId)</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
     
@@ -621,7 +621,7 @@
 
 
 <div class="description">
-    Checks the login password input for validity.
+    Marks an invalid login field when the user leaves it.
 </div>
 
 
@@ -657,7 +657,7 @@
 
         <tr>
             
-                <td class="name"><code>password</code></td>
+                <td class="name"><code>inputId</code></td>
             
 
             <td class="type">
@@ -673,7 +673,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">The login input name suffix to validate.</td>
         </tr>
 
     
@@ -714,7 +714,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line109">line 109</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line83">line 83</a>
     </li></ul></dd>
     
 
@@ -750,7 +750,7 @@
     </dt>
     <dd>
         
-<span class="param-type">boolean</span>
+<span class="param-type">void</span>
 
 
     </dd>
@@ -768,7 +768,7 @@
     
 
     
-    <h4 class="name" id="clearAllLoginErrors"><span class="type-signature"></span>clearAllLoginErrors<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="checkInputValidityOnInputLogin"><span class="type-signature"></span>checkInputValidityOnInputLogin<span class="signature">(inputId)</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
     
@@ -776,95 +776,7 @@
 
 
 <div class="description">
-    Clears all login error messages.
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line70">line 70</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="clearError"><span class="type-signature"></span>clearError<span class="signature">(errorId)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Clears an error message and resets invalid styling.
+    Revalidates a login field and refreshes the password toggle state.
 </div>
 
 
@@ -900,7 +812,7 @@
 
         <tr>
             
-                <td class="name"><code>errorId</code></td>
+                <td class="name"><code>inputId</code></td>
             
 
             <td class="type">
@@ -916,7 +828,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">The login input name suffix to validate.</td>
         </tr>
 
     
@@ -957,7 +869,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line132">line 132</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line69">line 69</a>
     </li></ul></dd>
     
 
@@ -982,6 +894,24 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -993,7 +923,7 @@
     
 
     
-    <h4 class="name" id="disableButtonWhileLoading"><span class="type-signature"></span>disableButtonWhileLoading<span class="signature">(buttonId)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="disableButtonWhileLoading"><span class="type-signature"></span>disableButtonWhileLoading<span class="signature">(buttonId)</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
     
@@ -1053,7 +983,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">The button element ID to disable.</td>
         </tr>
 
     
@@ -1094,7 +1024,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line279">line 279</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line327">line 327</a>
     </li></ul></dd>
     
 
@@ -1119,6 +1049,24 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -1130,7 +1078,7 @@
     
 
     
-    <h4 class="name" id="enableAllPointerEvents"><span class="type-signature"></span>enableAllPointerEvents<span class="signature">(id)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="enableAllPointerEvents"><span class="type-signature"></span>enableAllPointerEvents<span class="signature">(id)</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
     
@@ -1190,7 +1138,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">The panel identifier to enable.</td>
         </tr>
 
     
@@ -1231,7 +1179,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line256">line 256</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line309">line 309</a>
     </li></ul></dd>
     
 
@@ -1256,6 +1204,24 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -1267,7 +1233,7 @@
     
 
     
-    <h4 class="name" id="enableButton"><span class="type-signature"></span>enableButton<span class="signature">(buttonId)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="enableButton"><span class="type-signature"></span>enableButton<span class="signature">(buttonId)</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
     
@@ -1327,7 +1293,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">The button element ID to enable.</td>
         </tr>
 
     
@@ -1368,7 +1334,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line288">line 288</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line338">line 338</a>
     </li></ul></dd>
     
 
@@ -1393,6 +1359,24 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -1464,7 +1448,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">The submitted email address.</td>
         </tr>
 
     
@@ -1487,7 +1471,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">The submitted password.</td>
         </tr>
 
     
@@ -1510,7 +1494,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">The available user records.</td>
         </tr>
 
     
@@ -1551,7 +1535,169 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line178">line 178</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line219">line 219</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    The matching user object, or undefined when no match exists.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">undefined</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="focusInvalidElement"><span class="type-signature"></span>focusInvalidElement<span class="signature">(element)</span><span class="type-signature"> &rarr; {void}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Focuses the first invalid field and scrolls it into view.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>element</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The invalid form element to focus.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line191">line 191</a>
     </li></ul></dd>
     
 
@@ -1587,10 +1733,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Object</span>
-|
-
-<span class="param-type">undefined</span>
+<span class="param-type">void</span>
 
 
     </dd>
@@ -1608,7 +1751,7 @@
     
 
     
-    <h4 class="name" id="guardPage"><span class="type-signature"></span>guardPage<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="getMatchedUser"><span class="type-signature">(async) </span>getMatchedUser<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;(Object|undefined)>}</span></h4>
     
 
     
@@ -1616,7 +1759,7 @@
 
 
 <div class="description">
-    Page Protection: Checks upon page load whether a user existsin localStorage. If not, redirects to the login page.Executed automatically as an IIFE during script load.
+    Loads the current user from Firebase by matching the submitted email and password.
 </div>
 
 
@@ -1660,7 +1803,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line307">line 307</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line162">line 162</a>
     </li></ul></dd>
     
 
@@ -1685,6 +1828,28 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    The matching user object or undefined when no match exists.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;(Object|undefined)></span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -1696,7 +1861,7 @@
     
 
     
-    <h4 class="name" id="guestLogin"><span class="type-signature"></span>guestLogin<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="guardPage"><span class="type-signature"></span>guardPage<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
     
@@ -1704,7 +1869,7 @@
 
 
 <div class="description">
-    Logs in as guest and redirects to the summary page.
+    Protects protected pages by verifying that a logged-in user exists in local storage.If the session is missing or invalid, the user is redirected to the login page.
 </div>
 
 
@@ -1748,7 +1913,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line38">line 38</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line360">line 360</a>
     </li></ul></dd>
     
 
@@ -1773,6 +1938,24 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -1784,7 +1967,7 @@
     
 
     
-    <h4 class="name" id="handleLogin"><span class="type-signature">(async) </span>handleLogin<span class="signature">(event)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="guestLogin"><span class="type-signature"></span>guestLogin<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
     
@@ -1792,7 +1975,268 @@
 
 
 <div class="description">
-    Handles login form submission and authenticates the user.
+    Logs in as a guest user and redirects to the summary page.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line45">line 45</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="handleInvalidTaskform"><span class="type-signature"></span>handleInvalidTaskform<span class="signature">(taskForm)</span><span class="type-signature"> &rarr; {void}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Adds validation feedback to all invalid form fields.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>taskForm</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLFormElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The form to validate.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line175">line 175</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="handleLogin"><span class="type-signature">(async) </span>handleLogin<span class="signature">(event)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Handles the login form submission and redirects the user on success.
 </div>
 
 
@@ -1844,7 +2288,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">The submit event triggered by the login form.</td>
         </tr>
 
     
@@ -1885,7 +2329,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line142">line 142</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line141">line 141</a>
     </li></ul></dd>
     
 
@@ -1910,6 +2354,28 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Resolves after authentication and redirection logic completes.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;void></span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -1921,7 +2387,7 @@
     
 
     
-    <h4 class="name" id="initLogin"><span class="type-signature"></span>initLogin<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="initHelpPrivacyPolicyLegalNotice"><span class="type-signature"></span>initHelpPrivacyPolicyLegalNotice<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
     
@@ -1929,7 +2395,7 @@
 
 
 <div class="description">
-    Initializes login page handlers and UI state.
+    Initializes page protection for help, privacy policy, and legal notice pages.
 </div>
 
 
@@ -1973,7 +2439,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line47">line 47</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line379">line 379</a>
     </li></ul></dd>
     
 
@@ -1998,6 +2464,24 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -2009,7 +2493,113 @@
     
 
     
-    <h4 class="name" id="initPasswordToggle"><span class="type-signature"></span>initPasswordToggle<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="initLogin"><span class="type-signature"></span>initLogin<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Initializes the login page handlers and UI state.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line56">line 56</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="initPasswordToggle"><span class="type-signature"></span>initPasswordToggle<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
     
@@ -2061,7 +2651,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line231">line 231</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line280">line 280</a>
     </li></ul></dd>
     
 
@@ -2086,6 +2676,24 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -2097,7 +2705,7 @@
     
 
     
-    <h4 class="name" id="initSplash"><span class="type-signature"></span>initSplash<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="initSplash"><span class="type-signature"></span>initSplash<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
     
@@ -2149,7 +2757,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line237">line 237</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line289">line 289</a>
     </li></ul></dd>
     
 
@@ -2174,6 +2782,24 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -2237,7 +2863,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line164">line 164</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line204">line 204</a>
     </li></ul></dd>
     
 
@@ -2265,6 +2891,10 @@
 <h5>Returns:</h5>
 
         
+<div class="param-desc">
+    A promise resolving to the user list.
+</div>
+
 
 
 <dl>
@@ -2291,7 +2921,7 @@
     
 
     
-    <h4 class="name" id="lockScreenOrientation"><span class="type-signature"></span>lockScreenOrientation<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="lockScreenOrientation"><span class="type-signature"></span>lockScreenOrientation<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
     
@@ -2343,7 +2973,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line296">line 296</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line348">line 348</a>
     </li></ul></dd>
     
 
@@ -2368,6 +2998,24 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -2379,7 +3027,268 @@
     
 
     
-    <h4 class="name" id="saveCurrentUser"><span class="type-signature"></span>saveCurrentUser<span class="signature">(user)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="removeGeneralError"><span class="type-signature"></span>removeGeneralError<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Hides the global login error banner.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line129">line 129</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="removeInvalidStyle"><span class="type-signature"></span>removeInvalidStyle<span class="signature">(element)</span><span class="type-signature"> &rarr; {void}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Removes the invalid styling from a form field.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>element</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The input element to reset.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line97">line 97</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="saveCurrentUser"><span class="type-signature"></span>saveCurrentUser<span class="signature">(user)</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
     
@@ -2439,7 +3348,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">The authenticated user object.</td>
         </tr>
 
     
@@ -2480,7 +3389,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line188">line 188</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line231">line 231</a>
     </li></ul></dd>
     
 
@@ -2505,6 +3414,24 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -2516,7 +3443,7 @@
     
 
     
-    <h4 class="name" id="showError"><span class="type-signature"></span>showError<span class="signature">(errorId, message)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="showGeneralError"><span class="type-signature"></span>showGeneralError<span class="signature">()</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
     
@@ -2524,7 +3451,7 @@
 
 
 <div class="description">
-    Displays an error message and marks the related input invalid.
+    Displays the global login error banner for invalid credentials.
 </div>
 
 
@@ -2535,78 +3462,6 @@
 
 
 
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>errorId</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>message</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
 
 
 
@@ -2640,7 +3495,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line122">line 122</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line118">line 118</a>
     </li></ul></dd>
     
 
@@ -2665,6 +3520,24 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -2676,7 +3549,7 @@
     
 
     
-    <h4 class="name" id="togglePassword"><span class="type-signature"></span>togglePassword<span class="signature">(inputId, toggleId)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="togglePassword"><span class="type-signature"></span>togglePassword<span class="signature">(inputId, toggleId)</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
     
@@ -2736,7 +3609,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">The password input element ID.</td>
         </tr>
 
     
@@ -2759,7 +3632,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">The toggle button element ID.</td>
         </tr>
 
     
@@ -2800,7 +3673,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line221">line 221</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line268">line 268</a>
     </li></ul></dd>
     
 
@@ -2825,6 +3698,24 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -2836,7 +3727,7 @@
     
 
     
-    <h4 class="name" id="updatePasswordIcon"><span class="type-signature"></span>updatePasswordIcon<span class="signature">(inputId, toggleId)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="updatePasswordIcon"><span class="type-signature"></span>updatePasswordIcon<span class="signature">(inputId, toggleId)</span><span class="type-signature"> &rarr; {void}</span></h4>
     
 
     
@@ -2896,7 +3787,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">The password input element ID.</td>
         </tr>
 
     
@@ -2919,7 +3810,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">The toggle button element ID.</td>
         </tr>
 
     
@@ -2960,95 +3851,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line204">line 204</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="validateLoginForm"><span class="type-signature"></span>validateLoginForm<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Validates the login form values.
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="script.js.html">script.js</a>, <a href="script.js.html#line80">line 80</a>
+        <a href="script.js.html">script.js</a>, <a href="script.js.html#line249">line 249</a>
     </li></ul></dd>
     
 
@@ -3084,7 +3887,7 @@
     </dt>
     <dd>
         
-<span class="param-type">boolean</span>
+<span class="param-type">void</span>
 
 
     </dd>
@@ -3112,13 +3915,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#BASE_URL">BASE_URL</a></li><li><a href="global.html#ERROR_TO_INPUT">ERROR_TO_INPUT</a></li><li><a href="global.html#ICON_EYE_OFF">ICON_EYE_OFF</a></li><li><a href="global.html#ICON_EYE_ON">ICON_EYE_ON</a></li><li><a href="global.html#ICON_LOCK">ICON_LOCK</a></li><li><a href="global.html#checkLoginEmail">checkLoginEmail</a></li><li><a href="global.html#checkLoginPassword">checkLoginPassword</a></li><li><a href="global.html#clearAllLoginErrors">clearAllLoginErrors</a></li><li><a href="global.html#clearError">clearError</a></li><li><a href="global.html#disableButtonWhileLoading">disableButtonWhileLoading</a></li><li><a href="global.html#enableAllPointerEvents">enableAllPointerEvents</a></li><li><a href="global.html#enableButton">enableButton</a></li><li><a href="global.html#findMatchingUser">findMatchingUser</a></li><li><a href="global.html#guardPage">guardPage</a></li><li><a href="global.html#guestLogin">guestLogin</a></li><li><a href="global.html#handleLogin">handleLogin</a></li><li><a href="global.html#initLogin">initLogin</a></li><li><a href="global.html#initPasswordToggle">initPasswordToggle</a></li><li><a href="global.html#initSplash">initSplash</a></li><li><a href="global.html#loadAllUsers">loadAllUsers</a></li><li><a href="global.html#lockScreenOrientation">lockScreenOrientation</a></li><li><a href="global.html#saveCurrentUser">saveCurrentUser</a></li><li><a href="global.html#showError">showError</a></li><li><a href="global.html#togglePassword">togglePassword</a></li><li><a href="global.html#updatePasswordIcon">updatePasswordIcon</a></li><li><a href="global.html#validateLoginForm">validateLoginForm</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#BASE_URL">BASE_URL</a></li><li><a href="global.html#ERROR_TO_INPUT">ERROR_TO_INPUT</a></li><li><a href="global.html#ICON_EYE_OFF">ICON_EYE_OFF</a></li><li><a href="global.html#ICON_EYE_ON">ICON_EYE_ON</a></li><li><a href="global.html#ICON_LOCK">ICON_LOCK</a></li><li><a href="global.html#addInvalidStyle">addInvalidStyle</a></li><li><a href="global.html#checkInputValidityOnBlurLogin">checkInputValidityOnBlurLogin</a></li><li><a href="global.html#checkInputValidityOnInputLogin">checkInputValidityOnInputLogin</a></li><li><a href="global.html#disableButtonWhileLoading">disableButtonWhileLoading</a></li><li><a href="global.html#enableAllPointerEvents">enableAllPointerEvents</a></li><li><a href="global.html#enableButton">enableButton</a></li><li><a href="global.html#findMatchingUser">findMatchingUser</a></li><li><a href="global.html#focusInvalidElement">focusInvalidElement</a></li><li><a href="global.html#getMatchedUser">getMatchedUser</a></li><li><a href="global.html#guardPage">guardPage</a></li><li><a href="global.html#guestLogin">guestLogin</a></li><li><a href="global.html#handleInvalidTaskform">handleInvalidTaskform</a></li><li><a href="global.html#handleLogin">handleLogin</a></li><li><a href="global.html#initHelpPrivacyPolicyLegalNotice">initHelpPrivacyPolicyLegalNotice</a></li><li><a href="global.html#initLogin">initLogin</a></li><li><a href="global.html#initPasswordToggle">initPasswordToggle</a></li><li><a href="global.html#initSplash">initSplash</a></li><li><a href="global.html#loadAllUsers">loadAllUsers</a></li><li><a href="global.html#lockScreenOrientation">lockScreenOrientation</a></li><li><a href="global.html#removeGeneralError">removeGeneralError</a></li><li><a href="global.html#removeInvalidStyle">removeInvalidStyle</a></li><li><a href="global.html#saveCurrentUser">saveCurrentUser</a></li><li><a href="global.html#showGeneralError">showGeneralError</a></li><li><a href="global.html#togglePassword">togglePassword</a></li><li><a href="global.html#updatePasswordIcon">updatePasswordIcon</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.5</a> on Mon Jun 08 2026 17:14:35 GMT+0200 (Mitteleuropäische Sommerzeit)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.5</a> on Fri Jun 12 2026 14:56:32 GMT+0200 (Mitteleuropäische Sommerzeit)
 </footer>
 
 <script> prettyPrint(); </script>
