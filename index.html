@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join - Log in</title>
+    <link
+      rel="icon"
+      href="./assets/icons/join-logo-white.svg"
+      type="image/svg+xml"
+    />
+
+    <script src="./script.js" defer></script>
+
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/assets.css" />
+    <link rel="stylesheet" href="./styles/buttons.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/index-responsive.css" />
+    <link rel="stylesheet" href="./styles/templates.css" />
+    <link rel="stylesheet" href="./styles/templates-responsive.css" />
+  </head>
+  <body>
+    <div id="splash-overlay" class="splash-overlay">
+      <div class="splash-logo">
+        <img
+          class="splash-logo-blue"
+          src="./assets/icons/join-logo-blue.svg"
+          alt="Join Logo"
+        />
+        <img
+          class="splash-logo-white"
+          src="./assets/icons/join-logo-white.svg"
+          alt=""
+        />
+      </div>
+    </div>
+    <header>
+      <img
+        class="join-logo-blue"
+        src="./assets/icons/join-logo-blue.svg"
+        alt="logo"
+      />
+      <nav class="login-nav login-nav--desktop">
+        <p class="not-a-user-text" href="#">Not a join user?</p>
+        <a href="./html/signup.html">
+          <button class="button button-blue button-signup-small">
+            Sign up
+          </button>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <form
+        onsubmit="handleLogin(event)"
+        class="form-container login-container"
+        id="login-form"
+        novalidate
+      >
+        <div class="form-headline-container form-headline-container-login">
+          <div class="headline-wrapper">
+            <h1>Log In</h1>
+            <div class="h1-underline"></div>
+          </div>
+        </div>
+
+        <div
+          class="required required-login-container"
+          id="input-required-container"
+          data-message="Wrong email or password"
+        >
+          <section class="input-fields input-fields-login">
+            <div
+              class="input-wrapper input-wrapper-login-email required"
+              data-message="Please enter your email"
+            >
+              <input
+                aria-label="email adress"
+                placeholder="Email"
+                class="form-input form-input-email"
+                id="login-email"
+                pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+                type="email"
+                oninput="checkInputValidityOnInputLogin('email')"
+                onblur="checkInputValidityOnBlurLogin('email')"
+                required
+              />
+            </div>
+
+            <div
+              class="input-wrapper input-wrapper-login-password required"
+              data-message="Please enter your password"
+            >
+              <div class="input-with-icon">
+                <input
+                  oninput="checkInputValidityOnInputLogin('password')"
+                  onblur="checkInputValidityOnBlurLogin('password')"
+                  aria-label="password"
+                  placeholder="Password"
+                  class="form-input form-input-password"
+                  id="login-password"
+                  pattern="\S+"
+                  minlength="6"
+                  type="password"
+                  required
+                />
+                <button
+                  type="button"
+                  class="password-toggle"
+                  id="toggle-login-password"
+                  aria-label="Show password"
+                  onclick="
+                    togglePassword('login-password', 'toggle-login-password')
+                  "
+                ></button>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="form-btn-section">
+          <button
+            type="submit"
+            class="button button-login button-blue"
+            id="login-btn"
+          >
+            Log in
+          </button>
+          <button
+            type="button"
+            class="button button-login button-white"
+            onclick="guestLogin()"
+          >
+            Guest Log in
+          </button>
+        </section>
+      </form>
+    </main>
+
+    <footer>
+      <nav class="login-nav login-nav--mobile">
+        <p class="not-a-user-text" href="#">Not a join user?</p>
+        <a href="./html/signup.html">
+          <button class="button button-blue button-signup-small">
+            Sign up
+          </button>
+        </a>
+      </nav>
+
+      <nav class="footer-nav">
+        <a href="./html/privacy-policy-external.html">Privacy Policy</a>
+        <a href="./html/legal-notice-external.html">Legal Notice</a>
+      </nav>
+    </footer>
+
+    <div id="landscape-warning">
+      Please rotate your device to portrait mode to use the board optimally! 📱
+    </div>
+  </body>
+</html>
