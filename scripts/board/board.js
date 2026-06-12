@@ -13,22 +13,21 @@ let todos = [];
 let currentDraggedElement;
 
 /**
- * Initializes the board by ensuring all default tasks are present, 
+ * Initializes the board by ensuring all default tasks are present,
  * loading tasks from Firebase, and enabling pointer events for the board.
- * @async
+ * * @async
  * @returns {Promise<void>}
  */
 async function initBoard() {
   await loadTasks();
   guardPage();
-  /* postDefaultTasksInFirebase(); */
+  lockScreenOrientation();
   enableAllPointerEvents("--board");
 }
 
 /**
  * Loads tasks from Firebase and updates the global `todos` array.
- *
- * @async
+ * * @async
  * @returns {Promise<void>}
  */
 async function loadTasks() {
@@ -42,7 +41,6 @@ async function loadTasks() {
     fillTasksArray(data);
   }
   initDialogCloseOnClickOutside();
-  lockScreenOrientation();
   initGlobalDragSettings();
   updateHTML();
 }
