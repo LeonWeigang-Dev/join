@@ -108,6 +108,6 @@ join/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/AnnikaEgger/join
+git clone https://github.com/LeonWeigang-Dev/join
 cd join
 ```
